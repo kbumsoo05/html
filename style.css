@@ -1,3 +1,79 @@
-button:active {
-  background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+@keyframes Boya{
+  from{
+    transform: translate(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px);
+    opacity: 100;
+  }
+}
+
+
+
+body {
+  animation: Boya 1s ease-in-out;
+  margin: 20px;
+  justify-content: center;
+  
+}
+
+header {
+  padding: 20px;
+  border-bottom: solid 1px;
+  background-color: #AB65B9;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#Tfont {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 75px;
+  opacity: 100;
+
+}
+
+#Mlist {
+  border-bottom: solid 1px;
+  height: 50px;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+#Mlist a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0px;
+  color: black;
+}
+
+#UBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0px;
+}
+
+.alabogi {
+  border: 1px solid;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.alabogi:hover {
+  background-color: #C1B3B3;
 }
